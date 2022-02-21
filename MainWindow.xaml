@@ -1,0 +1,105 @@
+﻿<Window x:Class="HaushaltsbuchWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HaushaltsbuchWPF"
+        mc:Ignorable="d"
+        Title="Haushaltsbuch" Height="800" Width="1400" Background="White">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel HorizontalAlignment="left" Background="#2D2D2D" Grid.ColumnSpan="4" Grid.RowSpan="20">
+            <Label Background="#8F65B5" Margin="15, 15, 15, 30" HorizontalContentAlignment="Center" Padding="15, 20, 10, 15">
+                <Image Source="C:\Users\stefa\source\repos\HaushaltsbuchWPF\Images\Einnahmen.png"/>
+            </Label>
+            <Button Style="{StaticResource NavButtons}" x:Name="bt_bookListings" Click="bt_bookListings_Click" Cursor="Hand">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="C:\Users\stefa\source\repos\HaushaltsbuchWPF\Images\btn_buchungen.png"/>
+                    <Label Style="{StaticResource lbl_button}">Buchungen</Label>
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="bt_categoryListing" Style="{StaticResource NavButtons}" Click="bt_categoryListing_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="C:\Users\stefa\source\repos\HaushaltsbuchWPF\Images\btn_buchung.png"/>
+                    <Label Style="{StaticResource lbl_button}">Kategorien</Label>
+                </StackPanel>
+            </Button>
+
+            <Button Style="{StaticResource NavButtons}" x:Name="bt_standingOrderListings" Click="bt_standingOrderListings_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="C:\Users\stefa\source\repos\HaushaltsbuchWPF\Images\btn_dauerauftrag.png"/>
+                    <Label Style="{StaticResource lbl_button}">Daueraufträge</Label>
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="bt_kontoListings" Click="bt_kontoListings_Click" Style="{StaticResource NavButtons}">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="C:\Users\stefa\source\repos\HaushaltsbuchWPF\Images\btn_konto.png"/>
+                    <Label Style="{StaticResource lbl_button}">Konten</Label>
+                </StackPanel>
+            </Button>
+
+            <Button Style="{StaticResource NavButtons}" x:Name="bt_reportListings" Click="bt_reportListings_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="C:\Users\stefa\source\repos\HaushaltsbuchWPF\Images\btn_statistic.png"/>
+                    <Label Style="{StaticResource lbl_button}">Berichte</Label>
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="btn_closeProgramm" Style="{StaticResource NavButtons}" Click="btn_closeProgramm_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="C:\Users\stefa\source\repos\HaushaltsbuchWPF\Images\btn_closeWind.png"/>
+                    <Label Style="{StaticResource lbl_button}">Beenden</Label>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+
+        <Frame x:Name="MainContent" Grid.Row="0" Grid.Column="4" Grid.RowSpan="20" Grid.ColumnSpan="17" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>
