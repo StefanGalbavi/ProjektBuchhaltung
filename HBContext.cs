@@ -33,5 +33,20 @@ namespace HaushaltsbuchWPF.Class
                 optionsBuilder.UseLazyLoadingProxies().UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=HaushaltsbuchVVIII;Trusted_Connection=True;");
             }
         }
+        
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Category>().HasData(new Category { CategoryId = 1, CategoryName = "Einnahme" });
+            modelBuilder.Entity<Category>().HasData(new Category { CategoryId = 2, CategoryName = "Ausgabe" });
+            modelBuilder.Entity<Category>().HasData(new Category { CategoryId = 3, CategoryName = "Umbuchung" });
+
+            modelBuilder.Entity<Konto>().HasData(new Konto { KontoId = 1, KontoName = "Bank" });
+            modelBuilder.Entity<Konto>().HasData(new Konto { KontoId = 2, KontoName = "Bar" });
+
+            modelBuilder.Entity<SubCategory>().HasData(new SubCategory { CategoryId = 1, SubCategoryId = 1, SubCategoryName = "Lohn" });
+
+            modelBuilder.Entity<Booking>().HasData(new Booking { BookingId = 1, Amount = 2500, Date = DateTime.UtcNow });
+            ;
+        }
     }
 }
