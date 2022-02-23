@@ -13,7 +13,7 @@ namespace HaushaltsbuchWPF.Class
     {
         public HBContext()
         {
-
+            Database.EnsureCreated();
         }
 
         public virtual DbSet<Booking> Booking { get; set; } = null!;
@@ -30,10 +30,10 @@ namespace HaushaltsbuchWPF.Class
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseLazyLoadingProxies().UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=HaushaltsbuchVVIII;Trusted_Connection=True;");
+                optionsBuilder.UseLazyLoadingProxies().UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=HaushaltsbuchNewIII;Trusted_Connection=True;");
             }
         }
-        
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Category>().HasData(new Category { CategoryId = 1, CategoryName = "Einnahme" });
@@ -46,7 +46,6 @@ namespace HaushaltsbuchWPF.Class
             modelBuilder.Entity<SubCategory>().HasData(new SubCategory { CategoryId = 1, SubCategoryId = 1, SubCategoryName = "Lohn" });
 
             modelBuilder.Entity<Booking>().HasData(new Booking { BookingId = 1, Amount = 2500, Date = DateTime.UtcNow });
-            ;
         }
     }
 }

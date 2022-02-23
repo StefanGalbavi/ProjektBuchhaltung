@@ -8,6 +8,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\btn_buchung.png" />
+    <None Remove="Images\btn_buchungen.png" />
+    <None Remove="Images\btn_close.png" />
+    <None Remove="Images\btn_closeWind.png" />
+    <None Remove="Images\btn_dauerauftrag.png" />
+    <None Remove="Images\btn_hamburger.png" />
+    <None Remove="Images\btn_hamburgerOver.png" />
+    <None Remove="Images\btn_konto.png" />
+    <None Remove="Images\btn_statistic.png" />
+    <None Remove="Images\buchungen.png" />
+    <None Remove="Images\Einnahmen.png" />
+    <None Remove="Images\icons8-menu-250.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <COMReference Include="Microsoft.Office.Interop.Excel">
       <WrapperTool>tlbimp</WrapperTool>
       <VersionMinor>9</VersionMinor>
@@ -17,6 +32,21 @@
       <Isolated>false</Isolated>
       <EmbedInteropTypes>true</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\btn_buchung.png" />
+    <Resource Include="Images\btn_buchungen.png" />
+    <Resource Include="Images\btn_close.png" />
+    <Resource Include="Images\btn_closeWind.png" />
+    <Resource Include="Images\btn_dauerauftrag.png" />
+    <Resource Include="Images\btn_hamburger.png" />
+    <Resource Include="Images\btn_hamburgerOver.png" />
+    <Resource Include="Images\btn_konto.png" />
+    <Resource Include="Images\btn_statistic.png" />
+    <Resource Include="Images\buchungen.png" />
+    <Resource Include="Images\Einnahmen.png" />
+    <Resource Include="Images\icons8-menu-250.png" />
   </ItemGroup>
 
   <ItemGroup>

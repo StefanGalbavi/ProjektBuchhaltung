@@ -55,46 +55,46 @@
         </Grid.ColumnDefinitions>
         <StackPanel HorizontalAlignment="left" Background="#2D2D2D" Grid.ColumnSpan="4" Grid.RowSpan="20">
             <Label Background="#8F65B5" Margin="15, 15, 15, 30" HorizontalContentAlignment="Center" Padding="15, 20, 10, 15">
-                <Image Source="C:\Users\stefa\source\repos\HaushaltsbuchWPF\Images\Einnahmen.png"/>
+                <Image Source="\Images\Einnahmen.png"/>
             </Label>
             <Button Style="{StaticResource NavButtons}" x:Name="bt_bookListings" Click="bt_bookListings_Click" Cursor="Hand">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="C:\Users\stefa\source\repos\HaushaltsbuchWPF\Images\btn_buchungen.png"/>
+                    <Image Source="\Images\btn_buchungen.png"/>
                     <Label Style="{StaticResource lbl_button}">Buchungen</Label>
                 </StackPanel>
             </Button>
 
             <Button x:Name="bt_categoryListing" Style="{StaticResource NavButtons}" Click="bt_categoryListing_Click">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="C:\Users\stefa\source\repos\HaushaltsbuchWPF\Images\btn_buchung.png"/>
+                    <Image Source="\Images\btn_buchung.png"/>
                     <Label Style="{StaticResource lbl_button}">Kategorien</Label>
                 </StackPanel>
             </Button>
 
             <Button Style="{StaticResource NavButtons}" x:Name="bt_standingOrderListings" Click="bt_standingOrderListings_Click">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="C:\Users\stefa\source\repos\HaushaltsbuchWPF\Images\btn_dauerauftrag.png"/>
+                    <Image Source="\Images\btn_dauerauftrag.png"/>
                     <Label Style="{StaticResource lbl_button}">Daueraufträge</Label>
                 </StackPanel>
             </Button>
 
             <Button x:Name="bt_kontoListings" Click="bt_kontoListings_Click" Style="{StaticResource NavButtons}">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="C:\Users\stefa\source\repos\HaushaltsbuchWPF\Images\btn_konto.png"/>
+                    <Image Source="\Images\btn_konto.png"/>
                     <Label Style="{StaticResource lbl_button}">Konten</Label>
                 </StackPanel>
             </Button>
 
             <Button Style="{StaticResource NavButtons}" x:Name="bt_reportListings" Click="bt_reportListings_Click">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="C:\Users\stefa\source\repos\HaushaltsbuchWPF\Images\btn_statistic.png"/>
+                    <Image Source="\Images\btn_statistic.png"/>
                     <Label Style="{StaticResource lbl_button}">Berichte</Label>
                 </StackPanel>
             </Button>
 
             <Button x:Name="btn_closeProgramm" Style="{StaticResource NavButtons}" Click="btn_closeProgramm_Click">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="C:\Users\stefa\source\repos\HaushaltsbuchWPF\Images\btn_closeWind.png"/>
+                    <Image Source="\Images\btn_closeWind.png"/>
                     <Label Style="{StaticResource lbl_button}">Beenden</Label>
                 </StackPanel>
             </Button>

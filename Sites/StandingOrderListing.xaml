@@ -88,12 +88,19 @@
                          Background="#EAEAEA"
                          Text="Daueraufträge"/>
 
-                <ComboBox Style="{StaticResource ComboBoxings}" Grid.Row="2" Grid.Column="1">
+                <ComboBox Style="{StaticResource ComboBoxings}"
+                          Grid.Row="2"
+                          Grid.Column="1">
                     <ComboBoxItem IsSelected="True">Alle Konten</ComboBoxItem>
                     <ComboBoxItem>Bank</ComboBoxItem>
                     <ComboBoxItem>Bar</ComboBoxItem>
                 </ComboBox>
-                <Button Grid.Column="4" Grid.Row="2" Style="{StaticResource ButtonsKontoNeu}" Cursor="Hand" x:Name="btn_newOder" Click="btn_newOder_Click">
+                <Button Grid.Column="4"
+                        Grid.Row="2"
+                        Style="{StaticResource ButtonsKontoNeu}"
+                        Cursor="Hand"
+                        x:Name="btn_newOder"
+                        Click="btn_newOder_Click">
                     Dauerauftrag Neu
                 </Button>
             </Grid>

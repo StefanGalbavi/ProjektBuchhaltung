@@ -61,5 +61,8 @@ namespace HaushaltsbuchWPF.Sites
             }
             ItemListStandongOrders.ItemsSource = list;
         }
+
+
+
     }
 }
